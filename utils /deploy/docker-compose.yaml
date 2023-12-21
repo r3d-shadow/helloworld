@@ -1,0 +1,24 @@
+version: '3'
+
+networks:
+  helloworld:
+    name: helloworld
+
+services:
+  helloworld:
+    container_name: helloworld
+    image: helloworld:05baaa7
+    ports:
+      - 127.0.0.1:3000:3000 
+    networks:
+      - helloworld
+    deploy:
+      restart_policy:
+        condition: unless-stopped
+        delay: 5s
+        window: 120s
+      resources:
+        limits:
+          memory: 2G
+        reservations:
+          memory: 200M
