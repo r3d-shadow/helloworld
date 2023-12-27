@@ -17,7 +17,7 @@ jobs:
       - name: Build, tag
         id: build-image
         env:
-          REGISTRY: docker.io
+          REGISTRY: redsh4d0w
           REPOSITORY: test
         run: |
           IMAGE_TAG=hw-$(git rev-parse --short HEAD)
