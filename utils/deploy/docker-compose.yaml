@@ -7,7 +7,7 @@ networks:
 services:
   helloworld:
     container_name: helloworld
-    image: helloworld:2.0
+    image: helloworld:hw-8d6a2e0
     ports:
       - 127.0.0.1:3000:3000 
     networks:
@@ -21,4 +21,4 @@ services:
         limits:
           memory: 2G
         reservations:
-          memory: 200M
+          memory: hw-8d6a2e0M
