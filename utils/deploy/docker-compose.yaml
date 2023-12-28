@@ -7,7 +7,7 @@ networks:
 services:
   helloworld:
     container_name: helloworld
-    image: redsh4d0w/test:hw-bfa02d2
+    image: redsh4d0w/test:hw-9f2bdce
     ports:
       - 127.0.0.1:3000:3000 
     networks:
