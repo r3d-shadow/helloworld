@@ -7,7 +7,7 @@ networks:
 services:
   helloworld:
     container_name: helloworld
-    image: redsh4d0w/test:hw-ebd92d1
+    image: redsh4d0w/test:hw-aec281f
     ports:
       - 127.0.0.1:3000:3000 
     networks:
@@ -21,4 +21,4 @@ services:
         limits:
           memory: 2G
         reservations:
-          memory: hw-ebd92d1M
+          memory: hw-aec281fM
