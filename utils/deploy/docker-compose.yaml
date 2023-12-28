@@ -21,4 +21,4 @@ services:
         limits:
           memory: 2G
         reservations:
-          memory: hw-ae87347M
+          memory: 50M
